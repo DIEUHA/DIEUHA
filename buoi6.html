@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    
+        function in_BCC () {
+            console.log ("2 x 1 = 2")
+            console.log ("2 x 2 = 4")
+            console.log ("2 x 3 = 6")
+            console.log ("2 x 4 = 8")
+            console.log ("2 x 5 = 10")
+        }
+    in_BCC ();
+// Hàm có một tham số 
+function hinhVuong (canh){
+    console.log ("Hình vuông có cạnh = " + canh)
+}
+//Hàm có 2 tham số
+function hinhChuNhat (dai, rong) {
+    console.log ("Hình chữ nhật có chiều dài=" + dai + "và chiều rộng = " + rong)
+}
+//Hàm có 2 tham số - mở rộng
+function mieuTaMe (mautoc, vai) {
+    console.log (`Tóc mẹ bạc màu ${mautoc} phủ kín đôi vai ${vai}`)
+}
+//Hàm tính toán
+
+function tong (a,b) {
+    return a+b;
+}
+function tich (a,b,c) {
+    return a*b*c;
+}
+// Tính diện tích hình chữ nhật 
+function dienTichHCN (dai,rong) {
+    return dai*rong
+}
+//Tính diện tích hình tròn
+function dienTichHT (pi,R){
+    return pi*R**2
+}
+mieuTaMe ("đen","gầy")
+hinhVuong (4)
+hinhChuNhat (5,3)
+document.write(tong (3,5)) 
+console.log(tich(2,6,8)) 
+document.write (`Diện tích hình chữ nhật bằng ${dienTichHCN (10,5)}`)
+console.log (`Diện tích hình tròn bằng ${dienTichHT(3.14,13)}`)
+    </script>
+</body>
+</html>
